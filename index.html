@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/b3743af26e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="colored-section" id="title">
+        <div class="container-fluid">
+            <h1 class="title-brand">Let's code</h1>
+            <img class="logo"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHwAjAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwUBBAYCB//EAEAQAAIBAwEEBQcHDAMAAAAAAAABAgMEEQUGEiExE0FRcZEUImGBobHRI0JDYnSy4RUyNlJTVGRygpKi8AcWM//EABkBAQEBAQEBAAAAAAAAAAAAAAADAgQBBf/EACgRAQACAgEDAwMFAQAAAAAAAAABAgMRBDEzcRIhMhRhgRMiQlGhBf/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGQNW+1Ky0+n0l7c0qMfryw33LmzVaWvOqwnky0xxu86TWtxTu7alcUJb1KrFSg8YynyPJiYnUtUtF6xaOiU8aAAAAAAAAAAAAAAQ3FzQtaTq3NaFKmucpySR7ETPtDNrRWNzLm7zbew6byfSqNfUrjqjQg93x+COmvEvrd/2x93Ff8A6GPfpxx6p+yDotrtZ41atHR7eXzIedUx3/ijW+Nj6R6pY1zM3WfRH+tfWNkrDTtC1C9qzr3d5Tt5yVavUbw8c8fHJrFyr2yViPaNp5uBiphtadzOusun2a/R7Tfs1P7qOXL3LeX0ON2a+FkTWAAAAAAAAAAAAAwwOGsdHs9odqNaramqlenaV406NNze6vN48PUdtstsWKsU9tvmUwUz5rzf31LsrSytbKkqVnb0qFNfNpxUV7DktabTuZfRrStI1WNJ8Iy0qNsP0W1X7NP3FuP3a+XPy+xfwl2Y47O6Z9lp/dRnN3LeWuP2q+FmTWAAAAAAAAAAAAAwwOV2D+Vlrlz+11Sqk/QnwOnk+3pj7OPiR87f3LqzmdgBS7ZyS2V1XP7tP3FuP3a+XPyuzbwm2WedmtLf8LT+6jOXuW8t4O1XwtCaoAAAAAAAAAAYyBV6ttHo+kZWoahQpTX0e9mb/pXEpTFe/wAYSvmx0+UqT/t1/qT3dndBu7iL5XN18jS71nmV/QrTuW14R+otft12stjdJutH0d0L+VJ3NSvUrVOibccyeetE8963v+3opx8U46at1Wtalc1OFO5jTXop5ftZP2WmJaNXR69fPTazqLT6qcoU/bGKftNReI6RCc45n+Uq272S0WThG9d9dzqNqMa17Um5duFvFI5F46aj8Jzxsc/Lc/l0dnb0rS1pW1CG5SpQUIRznCS4IjMzM7l0ViKxqEx49AAAAAAAAAACq17RYazb9DUvL22Xba1tzPf1MpjyTjncREp5McXjW3HW2w+rbP15XGh1dOvnnKhf2/nrukvwOqeTTLGrxMeHJXi3xTukxPlYvbLU9M4bQ7NXlCKeHXtWqtPv4cvEn9PS3bur9RevzotNL212e1PEbfU6MJ8ujrZpy/yxn1E7cfJTrDdORjv0leyr0YU1UlVhGDaSk5LDbeEs+lkV9qrWdchZV6VjZ0/K9Urf+VrGWMLrlN/Niu31LJSmOZjc+0J3ya9o6tnTLCdvmveVfKL2ovlauMJfVgvmx9Hjl8TFp306NViY69VgeNAAAAAAAAAAAAAAMNI8FNquy2h6vl32m0Jzf0kVuT/ujhlqZslPjKV8OO/yhxe1mzllshsvqd1ZXFzOhVdCCtq0t+EX0seXee5M1snV5iw1x9Gf+KdZ1LUaty7rTFVpxaovUU4dJDdWVCpl70kk+D4vjx7SUzMxpXUb2+mnj0AAAAAAAAAAAAAAAAAIbq1oXcIQuaUKsITjUjGccpSi8xfemsgVWjbNWuj6zqupWtarnUpxqVKDx0cJLm0sZy2233gXYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxKSjFyk8JLLYGtHUbSTaVeHBZ4vqxnPgB4Wq2L53MI/zcOpPr9DQHuWo2cZbsq8U+Pqw0n70B6he206qpwrRcmm1h80uYHmWo2cU5SuaaSWct9QEiuaEujxVh8q3GHH85rOUu3k/ADX/K1mqkYSqbrcpx4r9XnnsAzDVLWazCU2t2En5j4Kf5uf8AewDwtZs3TVVTl0bziW7wyscPavEDZtrqlcuapPO48MCcAAAAAAADEkmsPkBrPT7N09x29Nxw1jHbz8QM+QWqbl0Mc4a9XZ7vBAJ2FrUcpVKEZOTbbfXy+C8AMqytoyUo0YJrk0uXo7vQB5/J9p128H5u7xWeHYBMqNOOMQjwk5Lhybzl+1gReQWjnvyoQlJttuSzl4xxAwtOsouLha0oOO7hxjhrdzu8uzLAzGwtYw3Y0IKOMYS7vgvBASUbajQbdGmo5STx2Lku5ASgAAAD/9k=">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <h3 class="big-heading navbar-brand">An Innovative way to learn</h3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-ite">
+                            <a class="top-list" href="#technologies">Technologies</a>
+                        </li>
+                        <li class="nav-ite">
+                            <a class="top-list" href="#playArea">Playground</a>
+                        </li>
+                        <li class="nav-ite">
+                            <a class="top-list" href="#courses">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="short-intro">LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews..</h1>
+                    <button type="button" class="create-account btn btn-dark btn-lg">Create Account ></i></button>
+                </div>
+
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features -->
+
+    <section class="white-section" id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="feature-box col-lg-3">
+                    <i class="icon fa-4x fas fa-bullseye"></i>
+                    <h3 class="feature-title">Easy to use.</h3>
+                    <p>One of the best learning platform.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icon fa-4x fas fa-check-circle"></i>
+                    <h3 class="features-headings">Elite Communication</h3>
+                    <p>Get your code checked and recieve instant feedbacks.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icon fa-4x fas fa-rupee-sign"></i>
+                    <h3 class="features-headings">Best price.</h3>
+                    <p>Get the best price for the most in-demand courses, compared to any other platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses" class="course">
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Web Development</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\web-dev.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Game Development</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\game-dev.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">App Development</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\mobile-dev.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Programming languages</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\languages.jpg" alt="">
+                    </div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Development Tools</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\tools.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Data Science</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\data-sci.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Database</button>
+                        </div><img class="img_img" src="C:\Users\Manan\Web Dev(Atom)\project\images\database.jpg" alt="">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <div class="middle">
+                            <button type="button" class="text">Ecommerce</button>
+                        </div><img class="img_img commerce" src="C:\Users\Manan\Web Dev(Atom)\project\images\ecommerce.jpg" alt="">
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+    </section>
+
+    <section class="tech" id="technologies">
+        <h2 class="section-heading">Some other most trending technologies</h2>
+        <section class="pricing py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Free Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-3 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Languages</h5>
+                                <hr>
+                                <ul class="l1 fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Javascript
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Python
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Java
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>C/CPP
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>PHP
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Swift
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>C#(C-sharp)
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Ruby
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Objective-C
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>SQL
+                                </ul>
+                                <a href="https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/" class="btn btn-block btn-primary text-uppercase">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-3">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Technologies</h5>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Docker.
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Go
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>CSS grid
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Augmented reality
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Machine learning
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>IoT(Internet of things)
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>APIs
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Cyber Security*
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Artificial Intellegence
+                                </ul>
+                                <a href="https://www.sabre.com/insights/10-technologies-that-a-programmer-should-learn-in-2019/" class="btn btn-block btn-secondary text-uppercase">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </section>
+
+    <!-- Path to victory -->
+    <section id="victorys">
+
+        <div id="victory-carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h1 class="steps">Step 1</h1><br>
+                    <h2 class="victory-img_description">Let's choose what to learn</h2>
+                    <img class="victory-image" src="images\langs.jpg" alt="man1-profile">
+                    <p>From making apps and websites to analyzing data, the choice is completely yours. Well, can't decide? We will help you out</p>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h1 class="steps">Step 2</h1>
+                    <h2 class="victory-img_description">Keep learning and doing</h2>
+                    <img class="victory-image" src="images\helloWorld.jpg" alt="lady-profile">
+                    <p>No matter your experience level, you'll be writing real, working code in minutes.</p>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h1 class="steps">Step 3</h1>
+                    <h2 class="victory-img_description">Get instant guidelines and feedback.</h2>
+                    <img class="victory-image" src="images\feedback.png" alt="man2-profile">
+                    <p>Your code is tested as soon as you submit it, so you always know if you're on the right track.</p>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h1 class="steps">Step 4</h1>
+                    <h2 class="victory-img_description">Practice makes a man perfect</h2>
+                    <img class="victory-image" src="images\4.png" alt="man2-profile">
+                    <p>Apply your learning with real-world projects and test your knowledge with tailor-made quizzes</p>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h1 class="steps">Step 5</h1>
+                    <h2 class="victory-img_description"></h2>
+                    <img class="victory-image" src="images\success.jpg" alt="man2-profile">
+                    <p>Coding skills have always been more in-demand. Learn everything you need to take your career to the next level.</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#victory-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#victory-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <section id="playArea">
+        <div class="heading">
+            <h1 class="play">Your Playground</h1>
+        </div>
+        <hr>
+        <div class="textarea">
+            <div class="upper-tab">
+                <div class="btn-1">
+                    <select class="languages" id="mySelect" onchange="myFunction()">
+                        <option class="dropdown-list" value="Python">Python</option>
+                        <option class="dropdown-list" value="Java">Java</option>
+                        <option class="dropdown-list" value="C">C</option>
+                        <option class="dropdown-list" value="C++">C++</option>
+                        <option class="dropdown-list" value="C#">C#</option>
+                    </select>
+                </div>
+                <div class="other-buttons">
+                    <button type="button" class="copy" name="button"><i class="fas fa-copy"></i>Copy</button>
+                    <button type="button" class="run" name="button"><i class="fas fa-play-circle"></i>Run</button>
+                    <button type="button" class="ground" name="button">Playground</button>
+                </div>
+            </div>
+            <div class="playground">
+                <textarea id="demo" name="Playground" class="playground" placeholder="Write your code here"></textarea>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="cta">
+        <div class="container-fluid">
+            <h3 class="big-heading">So to land on your dream job, join "Let's code" Today.</h3>
+            <button type="button" class="download-button apple btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+            <button type="button" class="download-button google btn btn-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+            <i class="social-icon fab fa-facebook"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fab fa-envelope"></i>
+            <p>© Copyright 2020 <span><br><br>Let's Code</span></p>
+        </div>
+    </footer>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

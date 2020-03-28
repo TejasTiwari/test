@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Playground</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Your Playground</h1>
+    </div>
+    <hr>
+    <div class="textarea">
+        <div class="upper-tab">
+            <select id="mySelect" onchange="myFunction()" class="languages">
+                <option class="dropdown-list" value="Python">Python</option>
+                <option class="dropdown-list" value="C">C</option>
+                <option class="dropdown-list" value="Java">Java</option>
+                <option class="dropdown-list" value="C++">C++</option>
+                <option class="dropdown-list" value="C#">C#</option>
+                <option class="dropdown-list" value="JavaScript">JavaScript</option>
+            </select>
+
+        </div>
+        <div class="playground">
+            <textarea id="demo" name="Playground" class="playground" placeholder="Write your code here"></textarea>
+        <hr> <br> <br>    <textarea id="demo2" name="Output" class="output" placeholder="Get your output here"></textarea>
+        </div>
+    </div>
+    <script src="play.js" charset="utf-8"></script>
+</body>
+
+</html>

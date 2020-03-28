@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    background: url('https://images.pexels.com/photos/164547/pexels-photo-164547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+}
+
+.heading{
+    color: red;
+    font-family: 'Algerian';
+}
+
+.playground {
+    border:1px solid cyan;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    width: 800px;
+    height: 450px;
+}
+
+.upper-tab {
+    display: inline-block;
+    background-color: #00e676;
+    height: 40px;
+    width: 800px;
+}
+
+.languages {
+    background-color: #3498DB;
+    color: white;
+    padding-left: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    float: right;
+}
+
+.dropdown-list{
+background-color: #616161;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.run {
+    background-color: #69f0ae;
+    height: 40px;
+    float: left;
+}
+
+.output{
+    background-color: #fff;
+    width: 800px;
+    height: 450px;
+}
